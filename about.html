@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+img{
+height:300px;
+width:20px;
+border-radius:30px;
+}
+</style>
+</head>
+<body bgcolor="orange">
+
+<h2>"TEAM MEMBERS"</h2>
+<br>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="me.jpeg" style="width:100%">
+      <div class="container">
+        <h2>chidambara thanu</h2>
+		<h2>19BCA0009</h2>
+        <p class="title">CEO & DEVELOPER</p>
+        <p>Student in VIT</p>
+        <p>chidambarathanu.b2019@vitstudent.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="cls.jpeg"style="width:100%">
+      <div class="container">
+        <h2>lokesh kumar</h2>
+		<h2>19BCA0004</h2>
+        <p class="title">TESTER</p>
+        <p>BRILLO</p>
+        <p>lokeshkumar.s2019@vitstudent.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="sas.jpeg" style="width:100%">
+      <div class="container">
+        <h2>santhosh kumar</h2>
+		<h2>19BCA0050</h2>
+        <p class="title">admin</p>
+        <p>Student in VIT</p>
+        <p>rsanthsohkumar.2019@vitstudent.ac.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
